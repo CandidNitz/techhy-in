@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Techhy — API Management Courses by Nitish</title>
+<title>Techhy — API Management Courses by Nitish Shete</title>
 <meta name="description" content="Hands-on Azure API Management and Google Cloud Apigee X courses, taught by a Solutions Architect with 15 years in enterprise integration.">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self';">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +32,10 @@
   body{
     margin:0;
     background:
-      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(139,107,242,0.16), transparent 60%),
-      radial-gradient(ellipse 800px 500px at 100% 0%, rgba(69,217,232,0.10), transparent 60%),
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.09) 1.2px, transparent 0) 0 0/16px 16px,
+      radial-gradient(ellipse 1300px 800px at 15% -10%, rgba(139,107,242,0.28), transparent 62%),
+      radial-gradient(ellipse 1200px 750px at 100% 10%, rgba(69,217,232,0.20), transparent 62%),
+      radial-gradient(ellipse 1100px 700px at 20% 100%, rgba(255,182,72,0.10), transparent 65%),
       var(--bg);
     color:var(--text);
     font-family:'Inter', sans-serif;
@@ -134,12 +136,69 @@
   .section-head h2{font-size:1.7rem;}
   .section-head p{color:var(--text-dim); max-width:520px; margin:0;}
 
+  /* COURSES LAYOUT + FILTER */
+  .courses-layout{
+    display:grid;
+    grid-template-columns:1fr 200px;
+    gap:32px;
+    align-items:start;
+  }
+  .courses-filter{
+    position:sticky;
+    top:88px;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:20px;
+  }
+  .filter-label{
+    font-family:'JetBrains Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--text-dim);
+    font-size:0.76rem;
+    margin-bottom:14px;
+  }
+  .filter-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .filter-btn{
+    text-align:left;
+    background:transparent;
+    border:1px solid var(--border);
+    color:var(--text-dim);
+    font-family:'Inter', sans-serif;
+    font-size:0.88rem;
+    font-weight:500;
+    padding:9px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  .filter-btn:hover{color:var(--text); border-color:#3a4270;}
+  .filter-btn.active{
+    background:linear-gradient(90deg, var(--cyan), var(--violet));
+    color:#0a0d16;
+    border-color:transparent;
+    font-weight:600;
+  }
+
+  @media (max-width:860px){
+    .courses-layout{grid-template-columns:1fr;}
+    .courses-filter{position:static; order:-1;}
+    .filter-buttons{flex-direction:row; flex-wrap:wrap;}
+    .filter-btn{flex:1 1 auto; text-align:center;}
+  }
+
   /* COURSE CARDS */
   .courses-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
     gap:24px;
   }
+  .course-card.hidden{display:none;}
   .course-card{
     background:var(--panel);
     border:1px solid var(--border);
@@ -286,8 +345,26 @@
     color:var(--cyan);
     font-family:'JetBrains Mono', monospace;
     font-size:0.85rem;
-    margin-bottom:18px;
+    margin-bottom:10px;
   }
+  .linkedin-link{
+    display:inline-flex; align-items:center; gap:8px;
+    color:var(--text-dim);
+    font-size:0.85rem;
+    font-weight:500;
+    text-decoration:none;
+    margin-bottom:18px;
+    transition:color 0.15s ease;
+  }
+  .linkedin-badge{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:22px; height:22px;
+    border-radius:5px;
+    background:#0A66C2;
+    flex-shrink:0;
+  }
+  .linkedin-badge svg{width:14px; height:14px; fill:#fff;}
+  .linkedin-link:hover{color:var(--text);}
   .about-text p{color:var(--text-dim); margin:0 0 14px 0; max-width:620px;}
   .cert-label{
     font-family:'JetBrains Mono', monospace;
@@ -444,22 +521,23 @@
 <div id="top"></div>
 
 <section class="hero wrap">
-  <div class="eyebrow">enterprise integration · api management · cloud</div>
-  <h1>Learn API management the way <span class="accent">enterprises actually run it</span>.</h1>
-  <p class="lead">Hands-on courses on Azure API Management and Google Cloud Apigee X, taught by a Solutions Architect who's shipped this for Fortune 500 companies — not just read the docs.</p>
+  <div class="eyebrow">cloud · API · AI · enterprise platforms · hands-on and concepts</div>
+  <h1>Learn enterprise tech the way <span class="accent">it's actually run in production</span>.</h1>
+  <p class="lead">Hands-on courses on API management, cloud, enterprise platforms and fundamental concepts — taught by an experienced Solutions Architect who loves teaching and technology.</p>
 </section>
 
 <section id="courses" class="wrap">
   <div class="section-head">
     <div class="eyebrow">courses</div>
-    <h2>Deep dives, one goal: Ship real-world API Solutions.</h2>
-    <p>Two courses are live on Udemy and discounted right now with the code below. A third, on MCP Fundamentals, is on the way.</p>
+    <h2>Hands-on courses. Real-world outcomes.</h2>
+    <p>Two courses are live on Udemy and discounted right now with the code below. More — across AI, cloud, and enterprise platforms — are on the way.</p>
   </div>
 
+  <div class="courses-layout">
   <div class="courses-grid">
 
     <!-- Course 1 -->
-    <article class="course-card">
+    <article class="course-card" data-categories="api azure">
       <div class="endpoint-row"><span class="method">GET</span> /courses/azure-api-management-masterclass</div>
       <img class="course-thumb" src="assets/azure-apim.jpg" alt="Azure API Management Masterclass course thumbnail">
       <div class="course-body">
@@ -479,7 +557,7 @@
     </article>
 
     <!-- Course 2 -->
-    <article class="course-card">
+    <article class="course-card" data-categories="api gcp">
       <div class="endpoint-row"><span class="method">GET</span> /courses/gcp-apigee-x-ultimate-guide</div>
       <img class="course-thumb" src="assets/apigee.jpg" alt="Google Cloud Apigee X API Management Masterclass course thumbnail">
       <div class="course-body">
@@ -498,22 +576,34 @@
       </div>
     </article>
 
-    <!-- Course 3 (upcoming) -->
-    <article class="course-card">
-      <div class="endpoint-row"><span class="method soon">SOON</span> /courses/mcp-fundamentals</div>
-      <div class="course-thumb-placeholder">MCP Fundamentals — in production</div>
+    <!-- Course 3 (upcoming, generic teaser) -->
+    <article class="course-card" data-categories="ai">
+      <div class="endpoint-row"><span class="method soon">SOON</span> /courses/ai-and-more</div>
+      <div class="course-thumb-placeholder">AI Courses and more — in production</div>
       <div class="course-body">
-        <h3>MCP Fundamentals</h3>
-        <p class="desc">A practical introduction to the Model Context Protocol — how it works, where it fits alongside API management, and how to build with it. Coming soon.</p>
+        <h3>AI Courses and more</h3>
+        <p class="desc">New hands-on courses for developers, consultants, and tech leaders navigating AI and the next wave of enterprise platforms. Same real-world approach, new territory.</p>
         <div class="course-footer">
           <div class="price-block">
             <div class="coming-soon">Launching soon</div>
           </div>
-          <a class="notify-btn" href="mailto:shete.nitish@gmail.com?subject=Notify%20me%3A%20MCP%20Fundamentals%20course">Get notified →</a>
+          <a class="notify-btn" href="#newsletter">Get notified →</a>
         </div>
       </div>
     </article>
 
+  </div>
+
+  <aside class="courses-filter" aria-label="Filter courses by category">
+    <div class="filter-label">Filter</div>
+    <div class="filter-buttons" role="group" aria-label="Course category filters">
+      <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="api" type="button" aria-pressed="false">APIs</button>
+      <button class="filter-btn" data-filter="azure" type="button" aria-pressed="false">Azure</button>
+      <button class="filter-btn" data-filter="gcp" type="button" aria-pressed="false">GCP</button>
+      <button class="filter-btn" data-filter="ai" type="button" aria-pressed="false">AI</button>
+    </div>
+  </aside>
   </div>
 </section>
 
@@ -544,11 +634,17 @@
   </div>
 
   <div class="about-grid">
-    <img class="about-photo" src="assets/headshot.png" alt="Photo of Nitish">
+    <img class="about-photo" src="assets/headshot.png" alt="Photo of Nitish Shete">
     <div class="about-text">
-      <h3>Nitish</h3>
+      <h3>Nitish Shete</h3>
       <div class="about-role">Solutions Architect · Enterprise Integration &amp; Cloud</div>
-      <p>Nitish is a Solutions Architect with 15 years of expertise in enterprise integration and cloud development.</p>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/nitishshete/" target="_blank" rel="noopener noreferrer">
+        <span class="linkedin-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </span>
+        LinkedIn
+      </a>
+      <p>Nitish Shete is a Solutions Architect with 15 years of expertise in enterprise integration and cloud development.</p>
       <p>He has worked with multiple Fortune 500 clients, helping them on their integration, API, and AI modernization journeys.</p>
       <p>He's certified across integration, cloud, API, and data engineering platforms:</p>
 

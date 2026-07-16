@@ -103,4 +103,27 @@
 
   wireSignupForm('newsletter-form', 'newsletter-msg');
   wireSignupForm('footer-newsletter-form', 'footer-newsletter-msg');
+
+  // ---- Course category filter ----
+  var filterButtons = document.querySelectorAll('.filter-btn');
+  var courseCards = document.querySelectorAll('.course-card');
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = btn.getAttribute('data-filter');
+
+      filterButtons.forEach(function (b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+
+      courseCards.forEach(function (card) {
+        var categories = (card.getAttribute('data-categories') || '').split(' ');
+        var show = filter === 'all' || categories.indexOf(filter) !== -1;
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
 })();
