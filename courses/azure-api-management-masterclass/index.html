@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure API Management Masterclass — techhy.in</title>
+<meta name="description" content="Hands-on, concepts and use-cases — a complete guide to becoming an Azure APIM expert, including the latest AI Gateway features. 14.5 hours, 151 lectures.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self';">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/course.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="../../index.html#top" class="brand"><span class="dot"></span>techhy<span class="path-suffix">.in</span></a>
+    <ul class="navlinks">
+      <li><a href="../../index.html#courses">Courses</a></li>
+      <li><a href="../../index.html#newsletter">Updates</a></li>
+      <li><a href="../../index.html#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="wrap breadcrumb">
+  <a href="../../index.html">techhy.in</a> / <a href="../../index.html#courses">Courses</a> / Azure API Management Masterclass
+</div>
+
+<section class="course-hero wrap">
+  <div class="eyebrow">GET · /courses/azure-api-management-masterclass</div>
+  <h1>Azure API Management Masterclass</h1>
+  <p class="headline">Hands-on, Concepts and Use-cases — Complete Guide to become Azure APIM expert, including the latest AI Gateway features.</p>
+
+  <div class="hero-meta">
+    <span class="rating-badge">
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      4.6 out of 5
+    </span>
+    <span class="students-badge">6,286 students</span>
+    <span>Last updated 7/2026</span>
+    <span>English</span>
+  </div>
+
+  <div class="hero-reviews">
+    <div class="hero-review-chip">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"The content is explained so well. I am really enjoying the course."</p>
+      <div class="review-author">Hussein Jaffer</div>
+    </div>
+    <div class="hero-review-chip">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Excellent content and I'm just enjoying it!"</p>
+      <div class="review-author">Ajay Kumar Rathod</div>
+    </div>
+  </div>
+
+  <div class="hero-cta">
+    <a class="enroll-btn" href="https://udemy.com/azure-api-management-masterclass?couponCode=JUL2026" target="_blank" rel="noopener noreferrer">Enroll on Udemy →</a>
+    <button class="coupon-btn" data-copy="JUL2026" type="button" aria-label="Copy coupon code JUL2026">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      code: JUL2026
+    </button>
+  </div>
+</section>
+
+<nav class="quick-links wrap" role="tablist" aria-label="Jump to section">
+  <a href="#inclusions" id="tab-inclusions" role="tab" aria-selected="true" data-tab="inclusions">Course Inclusions</a>
+  <a href="#content" id="tab-content" role="tab" aria-selected="false" data-tab="content">Course Topics</a>
+  <a href="#requirements" id="tab-requirements" role="tab" aria-selected="false" data-tab="requirements">Requirements</a>
+  <a href="#description" id="tab-description" role="tab" aria-selected="false" data-tab="description">About Course</a>
+  <a href="#reviews" id="tab-reviews" role="tab" aria-selected="false" data-tab="reviews">Student Reviews</a>
+</nav>
+
+<div class="wrap"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="inclusions" role="tabpanel" aria-labelledby="tab-inclusions">
+  <div class="section-head">
+    <div class="eyebrow">course inclusions</div>
+    <h2>What's included</h2>
+  </div>
+  <div class="inclusion-grid">
+    <div class="inclusion-card"><div class="value">14.5 hours</div><div class="label">On-demand video</div></div>
+    <div class="inclusion-card"><div class="value">151</div><div class="label">Lectures</div></div>
+    <div class="inclusion-card"><div class="value">10</div><div class="label">Knowledge-check quizzes</div></div>
+    <div class="inclusion-card"><div class="value">Full</div><div class="label">Lifetime access</div></div>
+    <div class="inclusion-card"><div class="value">Yes</div><div class="label">Access on mobile and TV</div></div>
+    <div class="inclusion-card"><div class="value">Yes</div><div class="label">Certificate of completion</div></div>
+  </div>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="content" role="tabpanel" aria-labelledby="tab-content">
+  <div class="section-head">
+    <div class="eyebrow">course content</div>
+    <h2>What you'll go through</h2>
+  </div>
+  <div class="curriculum-summary">14 sections · 151 lectures · 14.5 hours total length</div>
+
+  <div class="curriculum-list">
+
+    <details class="curriculum-section">
+      <summary><span class="title">Course Introduction and Azure Basics</span> <span class="meta">8 lectures · 19min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Course Introduction</span><span class="lecture-time">2:26</span></li>
+        <li><span class="lecture-name">Slide Downloads</span><span class="lecture-time">0:03</span></li>
+        <li><span class="lecture-name">Navigate the course your way</span><span class="lecture-time">1:45</span></li>
+        <li><span class="lecture-name">Udemy Player</span><span class="lecture-time">0:45</span></li>
+        <li><span class="lecture-name">Azure Basics - Regions and Availability Zones</span><span class="lecture-time">3:19</span></li>
+        <li><span class="lecture-name">Azure Resource Hierarchy</span><span class="lecture-time">1:46</span></li>
+        <li><span class="lecture-name">Optimize Cloud Costs</span><span class="lecture-time">2:57</span></li>
+        <li><span class="lecture-name">Sign up to Azure, set up access and budgets (IMPORTANT)</span><span class="lecture-time">5:31</span></li>
+        <li><span class="lecture-name">Knowledge Check: Azure Basics</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">API Fundamentals [Optional]</span> <span class="meta">13 lectures · 51min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Definition and Analogy</span><span class="lecture-time">3:28</span></li>
+        <li><span class="lecture-name">API Vs Web Service</span><span class="lecture-time">1:27</span></li>
+        <li><span class="lecture-name">API Types</span><span class="lecture-time">5:13</span></li>
+        <li><span class="lecture-name">API Examples</span><span class="lecture-time">2:07</span></li>
+        <li><span class="lecture-name">Postman Demo and API Terminologies</span><span class="lecture-time">8:32</span></li>
+        <li><span class="lecture-name">HTTP Methods and Idempotence</span><span class="lecture-time">9:08</span></li>
+        <li><span class="lecture-name">HTTP Method Comparison</span><span class="lecture-time">1:33</span></li>
+        <li><span class="lecture-name">HTTP Status Codes</span><span class="lecture-time">2:37</span></li>
+        <li><span class="lecture-name">Understanding REST</span><span class="lecture-time">5:08</span></li>
+        <li><span class="lecture-name">[Optional] Generate Google Maps API Key on GCP</span><span class="lecture-time">1:24</span></li>
+        <li><span class="lecture-name">Exploring Google Maps API</span><span class="lecture-time">8:04</span></li>
+        <li><span class="lecture-name">API Lifecycle and Benefits</span><span class="lecture-time">1:38</span></li>
+        <li><span class="lecture-name">Section Summary</span><span class="lecture-time">0:43</span></li>
+        <li><span class="lecture-name">Knowledge Check: API Basics</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Getting started with Azure API Management</span> <span class="meta">15 lectures · 1hr 18min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Azure APIM Components</span><span class="lecture-time">3:32</span></li>
+        <li><span class="lecture-name">Why to use API Management?</span><span class="lecture-time">3:10</span></li>
+        <li><span class="lecture-name">Create Azure APIM Service</span><span class="lecture-time">3:57</span></li>
+        <li><span class="lecture-name">Import and test our first API</span><span class="lecture-time">5:32</span></li>
+        <li><span class="lecture-name">IMPORTANT UPDATE on Demo Conference</span><span class="lecture-time">4:18</span></li>
+        <li><span class="lecture-name">API Subscriptions and Products</span><span class="lecture-time">10:43</span></li>
+        <li><span class="lecture-name">Explore Products, Operations and Definitions</span><span class="lecture-time">5:58</span></li>
+        <li><span class="lecture-name">Design-first approach with Petstore Swagger Specs</span><span class="lecture-time">8:53</span></li>
+        <li><span class="lecture-name">Mock API Response</span><span class="lecture-time">4:26</span></li>
+        <li><span class="lecture-name">API Revisions</span><span class="lecture-time">3:07</span></li>
+        <li><span class="lecture-name">API Versions (...and how is it different from Revisions?)</span><span class="lecture-time">5:26</span></li>
+        <li><span class="lecture-name">APIM Pricing Tiers</span><span class="lecture-time">2:52</span></li>
+        <li><span class="lecture-name">RBAC - Role Based Access Control</span><span class="lecture-time">3:24</span></li>
+        <li><span class="lecture-name">Managed Identity (System-assigned & User-defined)</span><span class="lecture-time">8:00</span></li>
+        <li><span class="lecture-name">APIM Workspaces</span><span class="lecture-time">4:54</span></li>
+        <li><span class="lecture-name">Knowledge Check: API Management Fundamentals</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Backends, Policy Scopes, Debugging, Caching, Exporting</span> <span class="meta">17 lectures · 1hr 39min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Key Vault Creation Demo</span><span class="lecture-time">1:53</span></li>
+        <li><span class="lecture-name">Named Values, Key Vault, Backend</span><span class="lecture-time">7:38</span></li>
+        <li><span class="lecture-name">Backend config for Basic Auth</span><span class="lecture-time">2:13</span></li>
+        <li><span class="lecture-name">Add API Manually</span><span class="lecture-time">5:39</span></li>
+        <li><span class="lecture-name">Policies: Scopes and inheritance</span><span class="lecture-time">7:22</span></li>
+        <li><span class="lecture-name">Policies: Coding basics</span><span class="lecture-time">4:23</span></li>
+        <li><span class="lecture-name">Azure CLI, VS Code and Power Shell for APIM</span><span class="lecture-time">6:35</span></li>
+        <li><span class="lecture-name">Importing App Service</span><span class="lecture-time">3:56</span></li>
+        <li><span class="lecture-name">Importing SOAP API</span><span class="lecture-time">5:31</span></li>
+        <li><span class="lecture-name">Importing Azure Functions</span><span class="lecture-time">6:26</span></li>
+        <li><span class="lecture-name">Importing Logic App</span><span class="lecture-time">3:24</span></li>
+        <li><span class="lecture-name">Debugging with Legacy Tracing</span><span class="lecture-time">11:33</span></li>
+        <li><span class="lecture-name">Debugging with Advanced Tracing</span><span class="lecture-time">9:59</span></li>
+        <li><span class="lecture-name">Caching - Internal Cache</span><span class="lecture-time">6:15</span></li>
+        <li><span class="lecture-name">Caching - External Redis Cache with Advanced Caching Policy</span><span class="lecture-time">13:09</span></li>
+        <li><span class="lecture-name">Export APIs</span><span class="lecture-time">2:12</span></li>
+        <li><span class="lecture-name">Celebrate your milestone!!</span><span class="lecture-time">0:37</span></li>
+        <li><span class="lecture-name">Knowledge Check: API Management Modern Features</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">API Security and Developer Portal</span> <span class="meta">18 lectures · 1hr 52min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Refresher - Understand OAuth2 Flows</span><span class="lecture-time">7:41</span></li>
+        <li><span class="lecture-name">Roadmap to Azure AD Setup Part1</span><span class="lecture-time">5:57</span></li>
+        <li><span class="lecture-name">Roadmap to Azure AD Setup Part2</span><span class="lecture-time">4:50</span></li>
+        <li><span class="lecture-name">Secure API with JWT using Entra ID (Azure AD)</span><span class="lecture-time">14:08</span></li>
+        <li><span class="lecture-name">Developer Portal - Essential Setup in under 15 minutes!</span><span class="lecture-time">12:03</span></li>
+        <li><span class="lecture-name">Developer Portal - Access Control</span><span class="lecture-time">2:54</span></li>
+        <li><span class="lecture-name">Roadmap to OAuth2 Server Config for Test Console</span><span class="lecture-time">4:32</span></li>
+        <li><span class="lecture-name">Azure AD as OAuth2 Server for Test Console</span><span class="lecture-time">6:33</span></li>
+        <li><span class="lecture-name">Azure AD B2C as OAuth2 Server for Test Console</span><span class="lecture-time">12:49</span></li>
+        <li><span class="lecture-name">Roadmap to OAuth2 Identities for Developer Portal</span><span class="lecture-time">3:12</span></li>
+        <li><span class="lecture-name">External User Sign-up/Sign-In with AD B2C Identity</span><span class="lecture-time">9:11</span></li>
+        <li><span class="lecture-name">Sign-In with Azure AD Identity</span><span class="lecture-time">5:38</span></li>
+        <li><span class="lecture-name">OAuth2 Conclusion: Our Use-Cases and real-world examples</span><span class="lecture-time">1:55</span></li>
+        <li><span class="lecture-name">Remove/Mask sensitive information</span><span class="lecture-time">2:46</span></li>
+        <li><span class="lecture-name">Client Certificate Authentication - with Backend & APIM</span><span class="lecture-time">9:16</span></li>
+        <li><span class="lecture-name">Basic Authentication - with Backend & APIM</span><span class="lecture-time">3:21</span></li>
+        <li><span class="lecture-name">CORS in action</span><span class="lecture-time">3:25</span></li>
+        <li><span class="lecture-name">API Defender, Protocols & Ciphers</span><span class="lecture-time">1:38</span></li>
+        <li><span class="lecture-name">Knowledge Check: Security and Developer Portal</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">[NEW] Load Balancers, Circuit Breakers, Credentials Manager</span> <span class="meta">6 lectures · 44min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Load Balancer and Circuit Breaker Intro</span><span class="lecture-time">4:46</span></li>
+        <li><span class="lecture-name">Create Backend Load Balancer</span><span class="lecture-time">9:48</span></li>
+        <li><span class="lecture-name">Create Backend Circuit Breaker</span><span class="lecture-time">6:25</span></li>
+        <li><span class="lecture-name">Credential Manager and Microsoft Graph Intro</span><span class="lecture-time">7:36</span></li>
+        <li><span class="lecture-name">Configure Credentials Manager</span><span class="lecture-time">7:36</span></li>
+        <li><span class="lecture-name">Microsoft Graph as Backend API</span><span class="lecture-time">8:06</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Networking</span> <span class="meta">9 lectures · 57min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Overview - Networking options illustrated</span><span class="lecture-time">11:03</span></li>
+        <li><span class="lecture-name">Deploy to External VNet</span><span class="lecture-time">9:03</span></li>
+        <li><span class="lecture-name">Deploy to Internal VNet</span><span class="lecture-time">10:30</span></li>
+        <li><span class="lecture-name">Integrate Application Gateway with Internal VNet</span><span class="lecture-time">8:47</span></li>
+        <li><span class="lecture-name">DDoS Protection for APIM</span><span class="lecture-time">3:04</span></li>
+        <li><span class="lecture-name">IMPORTANT: Delete DDoS Plan</span><span class="lecture-time">0:10</span></li>
+        <li><span class="lecture-name">Private Endpoint for VNet Connectivity</span><span class="lecture-time">6:34</span></li>
+        <li><span class="lecture-name">Configure Azure Front Door</span><span class="lecture-time">7:29</span></li>
+        <li><span class="lecture-name">Section-6 Cleanup</span><span class="lecture-time">0:26</span></li>
+        <li><span class="lecture-name">Knowledge Check: Networking</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">APIOps - DevOps for APIs</span> <span class="meta">12 lectures · 1hr 51min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">APIOps Overview - Scenarios, Architecture & Prerequisites</span><span class="lecture-time">6:55</span></li>
+        <li><span class="lecture-name">Initial Workflow Setup for GitHub</span><span class="lecture-time">16:10</span></li>
+        <li><span class="lecture-name">Extractor Tool</span><span class="lecture-time">8:03</span></li>
+        <li><span class="lecture-name">Publisher Tool</span><span class="lecture-time">6:00</span></li>
+        <li><span class="lecture-name">Environment Config - Named Values & Secrets</span><span class="lecture-time">20:53</span></li>
+        <li><span class="lecture-name">Environment Config - Backends</span><span class="lecture-time">14:55</span></li>
+        <li><span class="lecture-name">Environment Config - Loggers</span><span class="lecture-time">14:06</span></li>
+        <li><span class="lecture-name">Environment Config - APIs & Diagnostics</span><span class="lecture-time">8:32</span></li>
+        <li><span class="lecture-name">Extractor Config: Extract Specific APIs</span><span class="lecture-time">5:48</span></li>
+        <li><span class="lecture-name">APIOps Approach for Multiple Teams</span><span class="lecture-time">3:44</span></li>
+        <li><span class="lecture-name">APIOPs for Code-first Scenario using IDE (VSCode)</span><span class="lecture-time">5:57</span></li>
+        <li><span class="lecture-name">Section-7 Cleanup</span><span class="lecture-time">0:16</span></li>
+        <li><span class="lecture-name">Knowledge Check: APIOps</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Resiliency, Disaster Recovery, Custom Domain</span> <span class="meta">14 lectures · 55min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Capacity and Auto-Scaling</span><span class="lecture-time">8:26</span></li>
+        <li><span class="lecture-name">Platform Releases and Updates</span><span class="lecture-time">5:25</span></li>
+        <li><span class="lecture-name">Fault Tolerance</span><span class="lecture-time">3:20</span></li>
+        <li><span class="lecture-name">Zone Redundancy, Multi-region Deployment, Autoscaling</span><span class="lecture-time">7:39</span></li>
+        <li><span class="lecture-name">IMPORTANT: DELETE Premium Tier Service</span><span class="lecture-time">0:10</span></li>
+        <li><span class="lecture-name">Disaster Recovery (DR)</span><span class="lecture-time">3:03</span></li>
+        <li><span class="lecture-name">Postman Collection Download</span><span class="lecture-time">0:08</span></li>
+        <li><span class="lecture-name">Azure REST API</span><span class="lecture-time">3:11</span></li>
+        <li><span class="lecture-name">Backup APIM Service</span><span class="lecture-time">7:11</span></li>
+        <li><span class="lecture-name">Restore APIM Service</span><span class="lecture-time">3:04</span></li>
+        <li><span class="lecture-name">Recover deleted service, Compute Platforms</span><span class="lecture-time">5:08</span></li>
+        <li><span class="lecture-name">Backend multi-region failover</span><span class="lecture-time">3:06</span></li>
+        <li><span class="lecture-name">Custom Domain</span><span class="lecture-time">4:35</span></li>
+        <li><span class="lecture-name">Section-8 Cleanup</span><span class="lecture-time">0:07</span></li>
+        <li><span class="lecture-name">Knowledge Check: Resiliency, DR and Custom Domain</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">API Gateway Containerization with Kubernetes</span> <span class="meta">7 lectures · 38min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Overview: Self-hosted Gateway</span><span class="lecture-time">2:17</span></li>
+        <li><span class="lecture-name">Container and Kubernetes: Refresher</span><span class="lecture-time">3:31</span></li>
+        <li><span class="lecture-name">Run Web Server using Docker: Refresher</span><span class="lecture-time">8:36</span></li>
+        <li><span class="lecture-name">Deploy Gateway to Azure Kubernetes Cluster (AKS)</span><span class="lecture-time">9:09</span></li>
+        <li><span class="lecture-name">Onboard and test APIs</span><span class="lecture-time">7:45</span></li>
+        <li><span class="lecture-name">Support and Shared Responsibilities</span><span class="lecture-time">3:58</span></li>
+        <li><span class="lecture-name">Section-9 Cleanup</span><span class="lecture-time">2:25</span></li>
+        <li><span class="lecture-name">Knowledge Check: Self-hosted Gateway</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+  </div>
+  <p class="curriculum-more">+ 4 more sections (32 more lectures) — <a href="https://udemy.com/azure-api-management-masterclass?couponCode=JUL2026" target="_blank" rel="noopener noreferrer">see the full curriculum on Udemy</a></p>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="requirements" role="tabpanel" aria-labelledby="tab-requirements">
+  <div class="section-head">
+    <div class="eyebrow">requirements</div>
+    <h2>What you need before starting</h2>
+  </div>
+  <ul class="plain-list">
+    <li>Some IT background is recommended, but API/Azure experience is not needed</li>
+    <li>This is a low-code cloud service, so coding experience is not required</li>
+    <li>Enthusiasm to explore cloud services or learn a new technology</li>
+  </ul>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="description" role="tabpanel" aria-labelledby="tab-description">
+  <div class="section-head">
+    <div class="eyebrow">description</div>
+    <h2>About this course</h2>
+  </div>
+  <div class="desc-content">
+    <p><strong>Note that this course doesn't require any prior experience on API, API Gateway or Azure. Necessary basics are covered in the course. Learn the feature-packed Microsoft Azure API Management Service with this HANDS-ON DRIVEN course.</strong></p>
+    <p>Azure API Management is Platform-as-a-Service (PaaS) offering from Microsoft which provides <strong>low-code unified cloud platform</strong> for implementing API Gateway on HTTP services and managing complete lifecycle for the APIs.</p>
+    <p>This course is carefully structured to make sure it provides a holistic learning journey for ANYONE wanting to explore the numerous configurations, functionalities and use-cases of Azure API Management Service.</p>
+    <p><strong>JULY-2026: Major Course Update (22 new lessons) to cover latest AI Gateway, Resiliency and Security Features</strong></p>
+    <ul>
+      <li>Understand and build your own remote MCP Server from APIs</li>
+      <li>Configure and test MCP Server from AI Agents (Cursor, Claude Code)</li>
+      <li>Build LLM APIs using new LLM import feature (OpenAI, Gemini, Ollama APIs)</li>
+      <li>Improve Resiliency with Load Balancers and Circuit Breakers</li>
+      <li>OAuth2 Security required by Backend API? Learn Credential Manager with Microsoft Graph API</li>
+      <li>API Centre Customization</li>
+      <li>Publishing and exploring API Centre Portal</li>
+    </ul>
+    <p><strong>New to Azure, Cloud or APIs? No worries.</strong></p>
+    <ul>
+      <li>Curated for everyone — beginners &amp; experienced</li>
+      <li>Covers the necessary Cloud, API and AI fundamentals in dedicated sections and lectures</li>
+      <li>Explore Azure APIM essential concepts and features, then organically dive into advanced features and implementations (including AI Gateway) with subsequent sections</li>
+    </ul>
+    <p><strong>Familiar with Azure and/or APIs but not with API Management? Somewhat familiar with API Management? GOOD!</strong></p>
+    <ul>
+      <li>Now explore with me all the flavours of this feature-packed API Management Service — go from Beginner/Intermediate to EXPERT!</li>
+      <li>To make our APIM Service Implementation and Architecture robust, we'll implement various solutions using other tools and services.</li>
+    </ul>
+    <p><strong>So join me to implement API Management and also explore some other related services along the way:</strong></p>
+    <ul>
+      <li>App Registrations, OAuth2 Flows and Azure AD (Microsoft Entra ID) for delegated authentication and security</li>
+      <li>Azure Application Gateway, Front Door, Private Endpoint, VNets, NSGs for APIM Networking</li>
+      <li>GitHub Actions for APIOps Implementation</li>
+      <li>Docker Containers and AKS (Azure Kubernetes Service) for deploying Self-hosted Gateway</li>
+      <li>Azure Management REST API for Operations e.g. backup, restore &amp; recovery options</li>
+      <li>Azure Key Vault, Managed Identity, Custom Domains, DNS, Blob Storage, VMs etc.</li>
+      <li>MCP Servers, OpenAI API, Ollama API, Gemini Interactions API, OpenAI Compatible APIs from Ollama and Gemini</li>
+    </ul>
+    <p>Microsoft Azure is the fastest growing major Cloud Platform and this API Management offering is one of the most popular and widely used API Management solutions for a variety of IT organizations.</p>
+    <p>I've created this course out of my passion for teaching &amp; technology. Having spent 15 years working in enterprise integration and all its flavours (APIs, ETL, EDI, Streaming, MCP, Agent Skills etc.), this service seemed like a good starting point to bring you some crucial aspects of what I've learnt from project implementations in both Integration and Cloud. Happy Learning!!</p>
+
+    <div class="who-for">
+      <h3>Who this course is for</h3>
+      <ul>
+        <li>Software Engineers, Integration Consultants and Technical Leads</li>
+        <li>Beginners curious about knowing Cloud, APIs or API Management</li>
+        <li>Solutions Architects or Enterprise Architects</li>
+        <li>Anyone wanting to broaden their technical horizons</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="reviews" role="tabpanel" aria-labelledby="tab-reviews">
+  <div class="section-head">
+    <div class="eyebrow">student reviews</div>
+    <h2>What students are saying</h2>
+    <p>A snapshot from 789 ratings (4.6 average) on Udemy.</p>
+  </div>
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Very good teaching."</p>
+      <div class="review-author">So Young Yoon · Udemy student</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Very detailed!"</p>
+      <div class="review-author">Luis Alberto Reynoso · Udemy student</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Informative lectures."</p>
+      <div class="review-author">V RajeshKumar · Udemy student</div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>© <span id="year"></span> techhy.in</span>
+  <span><a href="../../index.html">Back to all courses</a></span>
+</footer>
+
+<script src="../../assets/main.js" defer></script>
+
+</body>
+</html>

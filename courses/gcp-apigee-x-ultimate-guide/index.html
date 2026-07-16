@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Cloud Apigee X API Management Masterclass — techhy.in</title>
+<meta name="description" content="A complete guide packed with hands-on labs, concepts and use-cases — built on the latest Cloud Console UI. 18.5 hours, 161 lectures.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self';">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/course.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="../../index.html#top" class="brand"><span class="dot"></span>techhy<span class="path-suffix">.in</span></a>
+    <ul class="navlinks">
+      <li><a href="../../index.html#courses">Courses</a></li>
+      <li><a href="../../index.html#newsletter">Updates</a></li>
+      <li><a href="../../index.html#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="wrap breadcrumb">
+  <a href="../../index.html">techhy.in</a> / <a href="../../index.html#courses">Courses</a> / Google Cloud Apigee X API Management Masterclass
+</div>
+
+<section class="course-hero wrap">
+  <div class="eyebrow">GET · /courses/gcp-apigee-x-ultimate-guide</div>
+  <h1>Google Cloud Apigee X API Management Masterclass</h1>
+  <p class="headline">A Complete Guide packed with hands-on, concepts and use-cases — on the latest Cloud Console UI.</p>
+
+  <div class="hero-meta">
+    <span class="rating-badge">
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      4.4 out of 5
+    </span>
+    <span class="students-badge">1,671 students</span>
+    <span>Last updated 6/2026</span>
+    <span>English</span>
+  </div>
+
+  <div class="hero-reviews">
+    <div class="hero-review-chip">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Excellent course, highly recommended."</p>
+      <div class="review-author">Malvin Omar Almonte</div>
+    </div>
+    <div class="hero-review-chip">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Amazing course, excellent content."</p>
+      <div class="review-author">Santoshkumar Sala</div>
+    </div>
+  </div>
+
+  <div class="hero-cta">
+    <a class="enroll-btn" href="https://www.udemy.com/course/gcp-apigee-x-ultimate-guide?couponCode=JUL2026" target="_blank" rel="noopener noreferrer">Enroll on Udemy →</a>
+    <button class="coupon-btn" data-copy="JUL2026" type="button" aria-label="Copy coupon code JUL2026">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      code: JUL2026
+    </button>
+  </div>
+</section>
+
+<nav class="quick-links wrap" role="tablist" aria-label="Jump to section">
+  <a href="#inclusions" id="tab-inclusions" role="tab" aria-selected="true" data-tab="inclusions">Course Inclusions</a>
+  <a href="#content" id="tab-content" role="tab" aria-selected="false" data-tab="content">Course Topics</a>
+  <a href="#requirements" id="tab-requirements" role="tab" aria-selected="false" data-tab="requirements">Requirements</a>
+  <a href="#description" id="tab-description" role="tab" aria-selected="false" data-tab="description">About Course</a>
+  <a href="#reviews" id="tab-reviews" role="tab" aria-selected="false" data-tab="reviews">Student Reviews</a>
+</nav>
+
+<div class="wrap"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="inclusions" role="tabpanel" aria-labelledby="tab-inclusions">
+  <div class="section-head">
+    <div class="eyebrow">course inclusions</div>
+    <h2>What's included</h2>
+  </div>
+  <div class="inclusion-grid">
+    <div class="inclusion-card"><div class="value">18.5 hours</div><div class="label">On-demand video</div></div>
+    <div class="inclusion-card"><div class="value">161</div><div class="label">Lectures</div></div>
+    <div class="inclusion-card"><div class="value">3</div><div class="label">Knowledge-check quizzes</div></div>
+    <div class="inclusion-card"><div class="value">Full</div><div class="label">Lifetime access</div></div>
+    <div class="inclusion-card"><div class="value">Yes</div><div class="label">Access on mobile and TV</div></div>
+    <div class="inclusion-card"><div class="value">Yes</div><div class="label">Certificate of completion</div></div>
+  </div>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="content" role="tabpanel" aria-labelledby="tab-content">
+  <div class="section-head">
+    <div class="eyebrow">course content</div>
+    <h2>What you'll go through</h2>
+  </div>
+  <div class="curriculum-summary">13 sections · 161 lectures · 18.5 hours total length</div>
+
+  <div class="curriculum-list">
+
+    <details class="curriculum-section">
+      <summary><span class="title">Introduction and Google Cloud Basics</span> <span class="meta">12 lectures · 44min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Course Introduction</span><span class="lecture-time">2:40</span></li>
+        <li><span class="lecture-name">Navigate the course your way</span><span class="lecture-time">1:51</span></li>
+        <li><span class="lecture-name">Download Course Material</span><span class="lecture-time">0:06</span></li>
+        <li><span class="lecture-name">Google Cloud Essentials: Regions and Zones</span><span class="lecture-time">4:06</span></li>
+        <li><span class="lecture-name">GCP Resource Hierarchy</span><span class="lecture-time">3:01</span></li>
+        <li><span class="lecture-name">Cost Optimization</span><span class="lecture-time">5:48</span></li>
+        <li><span class="lecture-name">GCP Free Trial Signup</span><span class="lecture-time">4:26</span></li>
+        <li><span class="lecture-name">Set up Budget/Alerts</span><span class="lecture-time">8:45</span></li>
+        <li><span class="lecture-name">Managing GCP Projects</span><span class="lecture-time">4:36</span></li>
+        <li><span class="lecture-name">Do you want to help me?</span><span class="lecture-time">0:22</span></li>
+        <li><span class="lecture-name">API Enablement in Google Cloud</span><span class="lecture-time">2:43</span></li>
+        <li><span class="lecture-name">Cloud Shell and gcloud basics</span><span class="lecture-time">5:17</span></li>
+        <li><span class="lecture-name">Knowledge Check: GCP Basics</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">API Fundamentals [Optional]</span> <span class="meta">15 lectures · 1hr 4min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Definition and Analogy</span><span class="lecture-time">3:28</span></li>
+        <li><span class="lecture-name">API Vs Web Service</span><span class="lecture-time">1:27</span></li>
+        <li><span class="lecture-name">API Types</span><span class="lecture-time">5:13</span></li>
+        <li><span class="lecture-name">API Examples</span><span class="lecture-time">2:05</span></li>
+        <li><span class="lecture-name">Postman Demo and API Terminology</span><span class="lecture-time">8:32</span></li>
+        <li><span class="lecture-name">HTTP Methods and Idempotence</span><span class="lecture-time">9:08</span></li>
+        <li><span class="lecture-name">HTTP Method Comparison</span><span class="lecture-time">1:33</span></li>
+        <li><span class="lecture-name">HTTP Status Codes</span><span class="lecture-time">2:37</span></li>
+        <li><span class="lecture-name">Understanding REST</span><span class="lecture-time">5:08</span></li>
+        <li><span class="lecture-name">Design-first Approach to API Development</span><span class="lecture-time">2:58</span></li>
+        <li><span class="lecture-name">Explore OpenAPI Specification format</span><span class="lecture-time">9:50</span></li>
+        <li><span class="lecture-name">Generate Google Maps API Key</span><span class="lecture-time">2:08</span></li>
+        <li><span class="lecture-name">Exploring Google Maps API</span><span class="lecture-time">7:55</span></li>
+        <li><span class="lecture-name">API Lifecycle and Benefits</span><span class="lecture-time">1:38</span></li>
+        <li><span class="lecture-name">Section Summary</span><span class="lecture-time">0:43</span></li>
+        <li><span class="lecture-name">Knowledge Check: API Basics</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Apigee Basics: Provisioning, Flows, Variables, Policies, Target Servers</span> <span class="meta">22 lectures · 2hr 15min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Apigee Introduction</span><span class="lecture-time">6:15</span></li>
+        <li><span class="lecture-name">Need of API Management & Apigee Org</span><span class="lecture-time">5:28</span></li>
+        <li><span class="lecture-name">Provision Apigee Eval Org</span><span class="lecture-time">11:25</span></li>
+        <li><span class="lecture-name">EVAL Architecture and Walkthrough</span><span class="lecture-time">10:49</span></li>
+        <li><span class="lecture-name">Cloud Console Vs Classic UI</span><span class="lecture-time">1:45</span></li>
+        <li><span class="lecture-name">Explore and test hello-world proxy</span><span class="lecture-time">4:06</span></li>
+        <li><span class="lecture-name">Update target URL and test with CURL</span><span class="lecture-time">6:15</span></li>
+        <li><span class="lecture-name">Introduction to Apigee Flows and Policies</span><span class="lecture-time">5:23</span></li>
+        <li><span class="lecture-name">Create Conditional Flow and Attach Policy</span><span class="lecture-time">6:52</span></li>
+        <li><span class="lecture-name">Introduction to Flow Variables</span><span class="lecture-time">4:59</span></li>
+        <li><span class="lecture-name">Create your first Proxy - HTTPBin</span><span class="lecture-time">3:13</span></li>
+        <li><span class="lecture-name">ExtractVariables Policy using No-Target Proxy</span><span class="lecture-time">11:14</span></li>
+        <li><span class="lecture-name">Introduction to Tracing/Debugging</span><span class="lecture-time">8:28</span></li>
+        <li><span class="lecture-name">Offline Debugging</span><span class="lecture-time">1:31</span></li>
+        <li><span class="lecture-name">AssignMessage Policy to Compose Response</span><span class="lecture-time">11:17</span></li>
+        <li><span class="lecture-name">Standard Vs Extensible Proxy</span><span class="lecture-time">3:46</span></li>
+        <li><span class="lecture-name">Environment Types and Apigee Pricing</span><span class="lecture-time">4:33</span></li>
+        <li><span class="lecture-name">How to change Environment Type</span><span class="lecture-time">1:50</span></li>
+        <li><span class="lecture-name">LoadBalancer & Target Server Config: Google Map Proxy</span><span class="lecture-time">8:01</span></li>
+        <li><span class="lecture-name">URI Rewrite Mechanism: Google Map Proxy</span><span class="lecture-time">7:03</span></li>
+        <li><span class="lecture-name">Restrict Endpoints with RaiseFault: Google Map Proxy</span><span class="lecture-time">6:38</span></li>
+        <li><span class="lecture-name">Export, Import and Duplicate Proxies</span><span class="lecture-time">4:04</span></li>
+        <li><span class="lecture-name">Knowledge Check: Apigee Basics</span><span class="lecture-time">Quiz</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Products, Apps, Shared Flows, Flow Hooks, Route Rules, Fault Handling</span> <span class="meta">12 lectures · 1hr 33min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Import Petstore API using OpenAPI Spec</span><span class="lecture-time">5:24</span></li>
+        <li><span class="lecture-name">Key Authentication with VerifyAPIKey Policy</span><span class="lecture-time">5:12</span></li>
+        <li><span class="lecture-name">Products, Developers, Apps</span><span class="lecture-time">8:04</span></li>
+        <li><span class="lecture-name">Bundle Products, Approve/Revoke Credentials</span><span class="lecture-time">7:18</span></li>
+        <li><span class="lecture-name">Implement SpikeArrest Policy</span><span class="lecture-time">4:52</span></li>
+        <li><span class="lecture-name">Implement Dynamic Quota</span><span class="lecture-time">9:02</span></li>
+        <li><span class="lecture-name">Policy Reusability: Shared Flows and FlowCallOut Policy</span><span class="lecture-time">8:59</span></li>
+        <li><span class="lecture-name">Flow Hooks for Global Policies</span><span class="lecture-time">8:30</span></li>
+        <li><span class="lecture-name">Create Mock Server with Postman</span><span class="lecture-time">7:18</span></li>
+        <li><span class="lecture-name">Mocking Technique: Use Route Rules and Multiple Targets</span><span class="lecture-time">10:13</span></li>
+        <li><span class="lecture-name">Fault Handling Essentials</span><span class="lecture-time">8:38</span></li>
+        <li><span class="lecture-name">Implement Fault Handling</span><span class="lecture-time">9:28</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">IAM, Service Account, Data Persistence, Service Callout, JavaScript</span> <span class="meta">19 lectures · 2hr 5min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Create Cloud Run Functions</span><span class="lecture-time">8:55</span></li>
+        <li><span class="lecture-name">IAM, Service Accounts and Google ID Token</span><span class="lecture-time">8:33</span></li>
+        <li><span class="lecture-name">Import IAM-secured Cloud Function in Apigee</span><span class="lecture-time">5:32</span></li>
+        <li><span class="lecture-name">Persistency and Response Cache Design</span><span class="lecture-time">4:03</span></li>
+        <li><span class="lecture-name">Response Cache Implementation</span><span class="lecture-time">9:03</span></li>
+        <li><span class="lecture-name">Cache Resource, Scopes and Prefix Concepts</span><span class="lecture-time">2:39</span></li>
+        <li><span class="lecture-name">Download Apigee API Collection</span><span class="lecture-time">0:15</span></li>
+        <li><span class="lecture-name">Working with Apigee API and gcloud</span><span class="lecture-time">7:54</span></li>
+        <li><span class="lecture-name">Creating KVM (Key Value Map) Records</span><span class="lecture-time">4:59</span></li>
+        <li><span class="lecture-name">KeyValueMapOperations Policy and Private Variables</span><span class="lecture-time">6:59</span></li>
+        <li><span class="lecture-name">Property Sets for Dynamic URI Rewrite</span><span class="lecture-time">9:11</span></li>
+        <li><span class="lecture-name">Design new endpoint using Service Callout</span><span class="lecture-time">2:03</span></li>
+        <li><span class="lecture-name">Service Callout: HTTPTarget</span><span class="lecture-time">8:25</span></li>
+        <li><span class="lecture-name">Service Callout: Path Chaining</span><span class="lecture-time">6:30</span></li>
+        <li><span class="lecture-name">Service Callout: Proxy Chaining</span><span class="lecture-time">4:35</span></li>
+        <li><span class="lecture-name">Design for PopulateCache and LookupCache</span><span class="lecture-time">2:38</span></li>
+        <li><span class="lecture-name">Implement PopulateCache and LookupCache</span><span class="lecture-time">10:59</span></li>
+        <li><span class="lecture-name">Invalidate Cache</span><span class="lecture-time">8:13</span></li>
+        <li><span class="lecture-name">Response mashup using JavaScript Policy</span><span class="lecture-time">14:00</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">App Integration Service, SOAP, GraphQL, Cross-project Function Target</span> <span class="meta">8 lectures · 1hr 33min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Application Integration with API Trigger</span><span class="lecture-time">14:18</span></li>
+        <li><span class="lecture-name">API Proxy with Integration Target</span><span class="lecture-time">13:22</span></li>
+        <li><span class="lecture-name">SOAP Essentials with CountryInfoService [Fast-track]</span><span class="lecture-time">12:58</span></li>
+        <li><span class="lecture-name">SOAP Proxy with Message Validation Policy</span><span class="lecture-time">12:18</span></li>
+        <li><span class="lecture-name">REST Facade on SOAP Target</span><span class="lecture-time">13:00</span></li>
+        <li><span class="lecture-name">GraphQL Essentials with SpaceX API [Fast-track]</span><span class="lecture-time">13:28</span></li>
+        <li><span class="lecture-name">GraphQL Proxy with Schema Validation</span><span class="lecture-time">8:27</span></li>
+        <li><span class="lecture-name">Cross-project Function call with Apigee</span><span class="lecture-time">5:37</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Integrated Developer Portal</span> <span class="meta">12 lectures · 1hr 46min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Create, Customize and Publish Integrated Portal in minutes</span><span class="lecture-time">13:17</span></li>
+        <li><span class="lecture-name">API Catalog, Visibility, and Self-Service Sign-up/Sign-In</span><span class="lecture-time">7:23</span></li>
+        <li><span class="lecture-name">Register Apps and Add REST API Documentation on Portal</span><span class="lecture-time">11:45</span></li>
+        <li><span class="lecture-name">Understand CORS and Pre-flight requests</span><span class="lecture-time">5:40</span></li>
+        <li><span class="lecture-name">Add CORS Policy and Test APIs from Portal</span><span class="lecture-time">8:37</span></li>
+        <li><span class="lecture-name">Publish GraphQL API on Portal</span><span class="lecture-time">6:42</span></li>
+        <li><span class="lecture-name">Teams and Audience for Portal Access Control</span><span class="lecture-time">8:17</span></li>
+        <li><span class="lecture-name">Restrict Signups by domain, Customize auto-generated emails</span><span class="lecture-time">4:42</span></li>
+        <li><span class="lecture-name">Custom Domain for Portal (Part-I): Design</span><span class="lecture-time">3:08</span></li>
+        <li><span class="lecture-name">Custom Domain for Portal (Part-II): Implementation</span><span class="lecture-time">11:46</span></li>
+        <li><span class="lecture-name">SSO for Portal (Part-I): Understand SAML Flow</span><span class="lecture-time">6:37</span></li>
+        <li><span class="lecture-name">SSO for Portal (Part-II): SAML Implementation</span><span class="lecture-time">18:17</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">API Authentication and Security</span> <span class="meta">11 lectures · 1hr 52min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">API Security Overview</span><span class="lecture-time">2:38</span></li>
+        <li><span class="lecture-name">Basic Authentication (for Proxy and Backend)</span><span class="lecture-time">16:14</span></li>
+        <li><span class="lecture-name">Understand OAuth2 Flow</span><span class="lecture-time">6:59</span></li>
+        <li><span class="lecture-name">Download OAuth2 Collection for Reference</span><span class="lecture-time">0:09</span></li>
+        <li><span class="lecture-name">Create and Test Proxy-based OAuth2 Server</span><span class="lecture-time">14:51</span></li>
+        <li><span class="lecture-name">Verify Access Token on Resource Proxy</span><span class="lecture-time">17:19</span></li>
+        <li><span class="lecture-name">Okta OAuth2 setup and VerifyJWT Policy</span><span class="lecture-time">11:54</span></li>
+        <li><span class="lecture-name">Test Okta OAuth2 Integration and understand JWTs</span><span class="lecture-time">14:17</span></li>
+        <li><span class="lecture-name">IP Filtering and REGEX Security</span><span class="lecture-time">9:44</span></li>
+        <li><span class="lecture-name">JSON and XML Threat Protection Policies</span><span class="lecture-time">6:17</span></li>
+        <li><span class="lecture-name">Debug Masks</span><span class="lecture-time">11:47</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Administration, SSL/TLS and Audit Logs</span> <span class="meta">12 lectures · 1hr 16min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">A note on New Apigee Org</span><span class="lecture-time">0:32</span></li>
+        <li><span class="lecture-name">IAM Principals, Roles and Permissions</span><span class="lecture-time">2:50</span></li>
+        <li><span class="lecture-name">Predefined Apigee Roles, Custom Roles</span><span class="lecture-time">8:47</span></li>
+        <li><span class="lecture-name">TLS Simplified</span><span class="lecture-time">10:44</span></li>
+        <li><span class="lecture-name">Configure Truststore and Reference</span><span class="lecture-time">9:27</span></li>
+        <li><span class="lecture-name">Enforce TLS for Target Connections</span><span class="lecture-time">9:00</span></li>
+        <li><span class="lecture-name">Scaling, High Availability and Backups</span><span class="lecture-time">5:11</span></li>
+        <li><span class="lecture-name">Runtime Instance Configurations</span><span class="lecture-time">5:06</span></li>
+        <li><span class="lecture-name">Apigee Releases</span><span class="lecture-time">3:34</span></li>
+        <li><span class="lecture-name">Environment, Env Group and Organization Hierarchy</span><span class="lecture-time">5:13</span></li>
+        <li><span class="lecture-name">Create and test new Apigee Environment</span><span class="lecture-time">6:52</span></li>
+        <li><span class="lecture-name">Query Audit Logs</span><span class="lecture-time">8:50</span></li>
+      </ul>
+    </details>
+
+    <details class="curriculum-section">
+      <summary><span class="title">Networking and Architecture</span> <span class="meta">12 lectures · 1hr 44min</span></summary>
+      <ul class="lecture-list">
+        <li><span class="lecture-name">Networking Pre-requisites</span><span class="lecture-time">0:39</span></li>
+        <li><span class="lecture-name">Internal Network Connection using Private Domain</span><span class="lecture-time">8:16</span></li>
+        <li><span class="lecture-name">Restrict External calls to APIs</span><span class="lecture-time">7:23</span></li>
+        <li><span class="lecture-name">Private Service Connect (PSC) for Northbound</span><span class="lecture-time">18:15</span></li>
+        <li><span class="lecture-name">PSC Southbound: Service Attachment</span><span class="lecture-time">10:31</span></li>
+        <li><span class="lecture-name">PSC Southbound: Endpoint Attachment</span><span class="lecture-time">6:13</span></li>
+        <li><span class="lecture-name">Shared VPC and VPC Peering</span><span class="lecture-time">9:05</span></li>
+        <li><span class="lecture-name">Custom Domain for API Access from Internet</span><span class="lecture-time">7:49</span></li>
+        <li><span class="lecture-name">Provision Apigee X Pay-as-you-go</span><span class="lecture-time">14:12</span></li>
+        <li><span class="lecture-name">PAYG Architecture and Walkthrough</span><span class="lecture-time">6:39</span></li>
+        <li><span class="lecture-name">Expand PAYG Apigee to new regions</span><span class="lecture-time">12:58</span></li>
+        <li><span class="lecture-name">PAYG Cleanup - Disable and Delete the Project</span><span class="lecture-time">2:11</span></li>
+      </ul>
+    </details>
+
+  </div>
+  <p class="curriculum-more">+ 3 more sections (26 more lectures) — <a href="https://www.udemy.com/course/gcp-apigee-x-ultimate-guide?couponCode=JUL2026" target="_blank" rel="noopener noreferrer">see the full curriculum on Udemy</a></p>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="requirements" role="tabpanel" aria-labelledby="tab-requirements">
+  <div class="section-head">
+    <div class="eyebrow">requirements</div>
+    <h2>What you need before starting</h2>
+  </div>
+  <ul class="plain-list">
+    <li>Basic IT background is recommended, but API/GCP/Cloud experience is not needed</li>
+    <li>This is a low-code cloud service, so coding experience is not required</li>
+  </ul>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="description" role="tabpanel" aria-labelledby="tab-description">
+  <div class="section-head">
+    <div class="eyebrow">description</div>
+    <h2>About this course</h2>
+  </div>
+  <div class="desc-content">
+    <p><strong>Note that this course doesn't require any prior experience on APIs or Google Cloud Platform (GCP). Necessary Cloud and API basics are covered in the course. Learn the market-leading API Management service, Apigee X, with this HANDS-ON DRIVEN course.</strong></p>
+    <p>Apigee X is one of the most popular <strong>fully-managed cloud-native services</strong> for implementing API Gateway on HTTP services and managing the complete lifecycle for APIs. It is hosted on Google Cloud Platform, one of the fastest growing major cloud providers.</p>
+    <p>This course offers a holistic learning journey for anyone wanting to explore the numerous enterprise-grade solutions offered by this feature-packed cloud service.</p>
+    <p><strong>New to GCP, Cloud or APIs? No worries.</strong></p>
+    <ul>
+      <li>Suitable for everyone — beginners &amp; experienced</li>
+      <li>Covers the necessary Cloud and API fundamentals in initial dedicated sections</li>
+      <li>Explore Apigee X essential concepts and features, then organically dive into advanced features and implementations with subsequent sections</li>
+    </ul>
+    <p><strong>Familiar with GCP and/or APIs but not with API Management? Somewhat familiar with API Management? GOOD — now go from Beginner/Intermediate to EXPERT!</strong></p>
+    <ul>
+      <li>Explore with me why we even need API Management and how smart solutions can be built around APIs using Apigee X</li>
+      <li>Use the latest Cloud Console UI for all hands-on — helpful for existing Apigee developers who want to learn the new UI and features</li>
+    </ul>
+    <p><strong>You'll learn GCP and Apigee essentials very quickly, but in the second half of the course you'll also learn many crucial concepts and Cloud solutions useful for most IT areas:</strong></p>
+    <ul>
+      <li>Service Accounts, IAM, OAuth2 Flows (SSO), CORS, Okta (third-party IdP) for API security and access controls</li>
+      <li>Cloud Run Functions &amp; Application Integration Service basics to make them backend APIs on Apigee</li>
+      <li>REST, SOAP and GraphQL basics along with their implementation on Apigee X</li>
+      <li>TLS/SSL flow, and implementing it on the Apigee X Trust Store</li>
+      <li>Networking architectures using Google Cloud VPCs, Private Service Connect (PSC), Network Peering, Network Endpoint Groups and GCP Load Balancers</li>
+      <li>Apigee REST API for operations like Debug Masking, Key-Value Maps, Runtime Instance configs</li>
+      <li>Custom Domain and SAML SSO configuration for the Developer Portal</li>
+      <li>Local Proxy Development using the Cloud Code Extension in Visual Studio Code</li>
+      <li>Cloud Logging and Monitoring features for API Observability</li>
+    </ul>
+    <p>I am confident that this practical guide would help tremendously whether your goal is just up-skilling yourself or actively implementing the service in your own organization. Happy Learning!!</p>
+
+    <div class="who-for">
+      <h3>Who this course is for</h3>
+      <ul>
+        <li>IT beginners or experienced developers who want to learn all about APIs</li>
+        <li>Software Engineers, Integration Consultants, Technical Leads, Cloud Developers</li>
+        <li>Solutions Architects or Enterprise Architects</li>
+        <li>Anyone who wants to gain hands-on confidence or broaden their technical skills</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="wrap tab-divider"><hr class="section-divider"></div>
+
+<section class="wrap tab-panel" id="reviews" role="tabpanel" aria-labelledby="tab-reviews">
+  <div class="section-head">
+    <div class="eyebrow">student reviews</div>
+    <h2>What students are saying</h2>
+    <p>A snapshot from 246 ratings (4.4 average) on Udemy.</p>
+  </div>
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Excellent presentation. I'm new to APIs in general. Happy with the material and depth."</p>
+      <div class="review-author">Aaron McKenzie · Udemy student</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Excellent course with hands-on learning."</p>
+      <div class="review-author">Jangati Venkat Himalay · Udemy student</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-quote">"Esta sendo bem detalhado, como eu esperava." <em>(Translated: It's been very detailed, just as I expected.)</em></p>
+      <div class="review-author">Guilherme Matos · Udemy student</div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>© <span id="year"></span> techhy.in</span>
+  <span><a href="../../index.html">Back to all courses</a></span>
+</footer>
+
+<script src="../../assets/main.js" defer></script>
+
+</body>
+</html>
