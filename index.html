@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Techhy — API Management Courses by Nitish</title>
 <meta name="description" content="Hands-on Azure API Management and Google Cloud Apigee X courses, taught by a Solutions Architect with 15 years in enterprise integration.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self';">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -325,6 +325,61 @@
     .notify-btn{width:100%; justify-content:center;}
   }
 
+  /* NEWSLETTER */
+  .newsletter-panel{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:36px;
+  }
+  .newsletter-panel .section-head{margin-bottom:22px;}
+  .subscribe-form{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    max-width:520px;
+  }
+  .email-input{
+    flex:1 1 260px;
+    background:var(--panel-2);
+    border:1px solid var(--border);
+    color:var(--text);
+    font-family:'Inter', sans-serif;
+    font-size:0.94rem;
+    padding:12px 14px;
+    border-radius:9px;
+  }
+  .email-input::placeholder{color:var(--text-dim);}
+  .email-input:focus{border-color:var(--cyan); outline:none;}
+  .subscribe-btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    background:linear-gradient(90deg, var(--cyan), var(--violet));
+    color:#0a0d16;
+    font-weight:600;
+    font-size:0.9rem;
+    padding:12px 20px;
+    border:none;
+    border-radius:9px;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:filter 0.15s ease, transform 0.15s ease;
+  }
+  .subscribe-btn:hover{filter:brightness(1.08); transform:translateY(-1px);}
+  .subscribe-btn:disabled{opacity:0.6; cursor:not-allowed; transform:none;}
+  .form-msg{
+    margin-top:12px;
+    font-size:0.85rem;
+    min-height:1.2em;
+  }
+  .form-msg[data-state="success"]{color:var(--get);}
+  .form-msg[data-state="error"]{color:#ff8a8a;}
+
+  @media (max-width:640px){
+    .newsletter-panel{padding:26px;}
+    .subscribe-form{flex-direction:column;}
+    .subscribe-btn{width:100%;}
+  }
+
   footer{
     border-top:1px solid var(--border);
     padding:32px 0;
@@ -334,6 +389,43 @@
     flex-wrap:wrap; gap:10px;
   }
   footer .mono{color:#4a5178;}
+
+  .footer-form{
+    display:flex; align-items:center; gap:8px;
+    flex-wrap:wrap;
+  }
+  .footer-email-input{
+    background:var(--panel-2);
+    border:1px solid var(--border);
+    color:var(--text);
+    font-family:'Inter', sans-serif;
+    font-size:0.85rem;
+    padding:8px 12px;
+    border-radius:8px;
+    width:210px;
+    max-width:60vw;
+  }
+  .footer-email-input::placeholder{color:var(--text-dim);}
+  .footer-email-input:focus{border-color:var(--cyan); outline:none;}
+  .footer-subscribe-btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    background:linear-gradient(90deg, var(--cyan), var(--violet));
+    color:#0a0d16;
+    font-weight:600;
+    font-size:0.82rem;
+    padding:8px 14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .footer-subscribe-btn:disabled{opacity:0.6; cursor:not-allowed;}
+  .footer-form-msg{
+    font-size:0.78rem;
+    width:100%;
+  }
+  .footer-form-msg[data-state="success"]{color:var(--get);}
+  .footer-form-msg[data-state="error"]{color:#ff8a8a;}
 </style>
 </head>
 <body>
@@ -343,6 +435,7 @@
     <a href="#top" class="brand"><span class="dot"></span>techhy<span class="path-suffix">.in</span></a>
     <ul class="navlinks">
       <li><a href="#courses">Courses</a></li>
+      <li><a href="#newsletter">Updates</a></li>
       <li><a href="#about">About</a></li>
     </ul>
   </nav>
@@ -426,6 +519,24 @@
 
 <div class="wrap"><hr class="section-divider"></div>
 
+<section id="newsletter" class="wrap">
+  <div class="newsletter-panel">
+    <div class="section-head">
+      <div class="eyebrow">stay in the loop</div>
+      <h2>Get notified about new courses and discount codes</h2>
+      <p>No spam — just an email when a new course, lesson, or coupon drops.</p>
+    </div>
+    <form class="subscribe-form" id="newsletter-form" data-form-name="newsletter">
+      <label for="newsletter-email" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+      <input type="email" id="newsletter-email" name="email" class="email-input" placeholder="you@example.com" required autocomplete="email">
+      <button type="submit" class="subscribe-btn">Notify me →</button>
+    </form>
+    <div class="form-msg" id="newsletter-msg" role="status" aria-live="polite"></div>
+  </div>
+</section>
+
+<div class="wrap"><hr class="section-divider"></div>
+
 <section id="about" class="wrap">
   <div class="section-head">
     <div class="eyebrow">about the instructor</div>
@@ -457,25 +568,16 @@
 
 <footer class="wrap">
   <span>© <span id="year"></span> techhy.in</span>
+  <form class="footer-form" id="footer-newsletter-form" data-form-name="footer-newsletter">
+    <label for="footer-email" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+    <input type="email" id="footer-email" name="email" class="footer-email-input" placeholder="Email for updates" required autocomplete="email">
+    <button type="submit" class="footer-subscribe-btn">Notify me</button>
+    <div class="footer-form-msg" id="footer-newsletter-msg" role="status" aria-live="polite"></div>
+  </form>
   <span class="mono">built without a backend</span>
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  document.querySelectorAll('.coupon-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var code = btn.getAttribute('data-copy');
-      var original = btn.innerHTML;
-      navigator.clipboard.writeText(code).then(function(){
-        btn.textContent = 'copied!';
-        setTimeout(function(){ btn.innerHTML = original; }, 1500);
-      }).catch(function(){
-        // Clipboard API unavailable — no-op, code is still visible on the button
-      });
-    });
-  });
-</script>
+<script src="assets/main.js" defer></script>
 
 </body>
 </html>
