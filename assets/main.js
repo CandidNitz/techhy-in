@@ -126,4 +126,36 @@
       });
     });
   });
+
+  // ---- Course page quick-links as in-place tabs ----
+  // Instead of jumping the browser to each section, clicking a quick-link
+  // swaps which section is visible right where the tabs are, so the
+  // user's scroll position never moves.
+  var tabList = document.querySelector('.quick-links[role="tablist"]');
+  var tabPanels = document.querySelectorAll('.tab-panel');
+
+  if (tabList && tabPanels.length) {
+    var tabs = tabList.querySelectorAll('a[data-tab]');
+    document.documentElement.classList.add('js-tabs');
+
+    function activateTab(targetId) {
+      tabPanels.forEach(function (panel) {
+        panel.classList.toggle('active', panel.id === targetId);
+      });
+      tabs.forEach(function (tab) {
+        var isActive = tab.getAttribute('data-tab') === targetId;
+        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+    }
+
+    // Show the first tab's panel by default.
+    activateTab(tabs[0].getAttribute('data-tab'));
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
+        activateTab(tab.getAttribute('data-tab'));
+      });
+    });
+  }
 })();
