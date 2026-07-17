@@ -127,6 +127,17 @@
     });
   });
 
+  // ---- Clickable course cards ----
+  // Lets people click anywhere on a card (including its image) to open the
+  // course page, while clicks on the card's own links/buttons (Enroll,
+  // Know more, copy coupon) still do their own thing instead of double-navigating.
+  document.querySelectorAll('.course-card[data-href]').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (e.target.closest('a, button')) return;
+      window.location.href = card.getAttribute('data-href');
+    });
+  });
+
   // ---- Course page quick-links as in-place tabs ----
   // Instead of jumping the browser to each section, clicking a quick-link
   // swaps which section is visible right where the tabs are, so the
@@ -155,6 +166,18 @@
       tab.addEventListener('click', function (e) {
         e.preventDefault();
         activateTab(tab.getAttribute('data-tab'));
+
+        // Nudge the page so the tab bar settles just under the sticky
+        // header, making it obvious new content opened below — without
+        // jumping to the very top each time or drifting further down on
+        // repeated clicks.
+        var stickyHeaderHeight = 68;
+        var breathingRoom = 24;
+        var navTop = tabList.getBoundingClientRect().top;
+        var scrollAdjust = navTop - (stickyHeaderHeight + breathingRoom);
+        if (Math.abs(scrollAdjust) > 4) {
+          window.scrollBy({ top: scrollAdjust, left: 0, behavior: 'smooth' });
+        }
       });
     });
   }

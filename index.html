@@ -211,6 +211,8 @@
     transform:translateY(-3px);
     border-color:#3a4270;
   }
+  .course-card[data-href]{cursor:pointer;}
+  .course-card[data-href]:hover{border-color:var(--cyan);}
   .endpoint-row{
     display:flex; align-items:center; gap:10px;
     padding:12px 18px;
@@ -570,7 +572,7 @@
   <div class="courses-grid">
 
     <!-- Course 1 -->
-    <article class="course-card" data-categories="api azure">
+    <article class="course-card" data-categories="api azure" data-href="courses/azure-api-management-masterclass/index.html">
       <div class="endpoint-row"><span class="method">GET</span> /courses/azure-api-management-masterclass</div>
       <img class="course-thumb" src="assets/azure-apim.jpg" alt="Azure API Management Masterclass course thumbnail">
       <div class="course-body">
@@ -593,7 +595,7 @@
     </article>
 
     <!-- Course 2 -->
-    <article class="course-card" data-categories="api gcp">
+    <article class="course-card" data-categories="api gcp" data-href="courses/gcp-apigee-x-ultimate-guide/index.html">
       <div class="endpoint-row"><span class="method">GET</span> /courses/gcp-apigee-x-ultimate-guide</div>
       <img class="course-thumb" src="assets/apigee.jpg" alt="Google Cloud Apigee X API Management Masterclass course thumbnail">
       <div class="course-body">

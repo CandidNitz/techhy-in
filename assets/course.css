@@ -267,14 +267,16 @@ section{padding:56px 0; scroll-margin-top:88px;}
   padding:16px 20px;
   display:grid;
   grid-template-columns:1fr auto auto;
+  grid-template-areas:"title meta icon";
   align-items:center;
-  gap:12px;
+  column-gap:12px;
   font-weight:600;
   font-size:0.96rem;
 }
 .curriculum-section summary::-webkit-details-marker{display:none;}
-.curriculum-section summary .title{min-width:0;}
+.curriculum-section summary .title{grid-area:title; min-width:0;}
 .curriculum-section summary .meta{
+  grid-area:meta;
   color:var(--text-dim);
   font-family:'JetBrains Mono', monospace;
   font-size:0.78rem;
@@ -283,6 +285,7 @@ section{padding:56px 0; scroll-margin-top:88px;}
   text-align:right;
 }
 .curriculum-section summary::after{
+  grid-area:icon;
   content:"+";
   font-family:'JetBrains Mono', monospace;
   color:var(--cyan);
@@ -376,8 +379,15 @@ section{padding:56px 0; scroll-margin-top:88px;}
 .review-author{color:var(--text-dim); font-size:0.82rem; font-family:'JetBrains Mono', monospace;}
 
 /* FOOTER */
+.footer-spacer{
+  border:none;
+  border-top:1px solid var(--border);
+  margin:0;
+}
+.footer-spacer-wrap{margin-top:40px;}
 footer{
   border-top:1px solid var(--border);
+  margin-top:24px;
   padding:32px 0;
   color:var(--text-dim);
   font-size:0.85rem;
@@ -392,6 +402,12 @@ footer a:hover{color:var(--cyan);}
   .hero-cta{flex-direction:column; align-items:flex-start;}
   .lecture-list li{grid-template-columns:1fr; gap:2px;}
   .lecture-list .lecture-time{text-align:left;}
-  .curriculum-section summary{grid-template-columns:1fr auto; row-gap:4px;}
-  .curriculum-section summary .meta{grid-column:1 / -1; text-align:left;}
+  .curriculum-section summary{
+    grid-template-columns:1fr auto;
+    grid-template-areas:
+      "title icon"
+      "meta  meta";
+    row-gap:4px;
+  }
+  .curriculum-section summary .meta{text-align:left;}
 }
