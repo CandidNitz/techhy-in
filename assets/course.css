@@ -192,6 +192,8 @@ section{padding:56px 0; scroll-margin-top:88px;}
 /* QUICK LINKS */
 .quick-links{
   display:flex; flex-wrap:wrap; gap:10px;
+  max-width:900px;
+  margin:0 auto;
   padding:0 24px 8px;
 }
 .quick-links a{
